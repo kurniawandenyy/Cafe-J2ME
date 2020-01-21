@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ProjectRestoran</string>
+    <string name="judul">Denys Cafe</string>
+    <string name="no">No Meja</string>
+    <string name="Makanan">Makanan</string>
+    <string name="Minuman">Minuman</string>
+    <string name="Jumlah">Jumlah</string>
+    <string name="harga">Harga</string>
+    <string name="soto">Soto Ayam</string>
+    <string name="nasgor">Nasi Goreng</string>
+    <string name="migor">Mie Goreng</string>
+    <string name="mibus">Mie Rebus</string>
+    <string name="pclAyam">Pecel Ayam</string>
+    <string name="pclLele">Pecel Lele</string>
+    <string name="alpukat">Jus Alpukat</string>
+    <string name="jeruk">Jus Jeruk</string>
+    <string name="mangga">Jus Mangga</string>
+    <string name="sirsak">Jus Sirsak</string>
+    <string name="wortel">Jus Wortel</string>
+    <string name="tomat">Jus Tomat</string>
+    <string name="diskon">Diskon</string>
+    <string name="pajak">Pajak</string>
+    <string name="jenisByr">Jenis Pembayaran</string>
+    <string name="totMa">Total Harga Makanan</string>
+    <string name="totMi">Total Harga Minuman</string>
+    <string name="tot">Total Harga</string>
+    <string name="totBay">Total Bayar</string>
+    <string name="jmlorang">Jumlah Orang</string>
+    <string name="proses">Proses</string>
+    <string name="detail">Detail Pesanan : </string>
+</resources>

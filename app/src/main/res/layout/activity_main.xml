@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtJudul"
+            android:text="@string/judul"
+            android:textColor="@color/DarkBlue"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:id="@+id/txtNoMeja"
+            android:layout_below="@id/txtJudul"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:textSize="25dp"
+            android:textColor="@color/DarkBlue"/>
+
+        <EditText
+            android:id="@+id/editNo"
+            android:layout_width="258dp"
+            android:layout_height="58dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/txtNoMeja"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="-14dp"
+            android:layout_toRightOf="@id/txtNoMeja"
+            android:textSize="20dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tmakanan"
+            android:layout_below="@id/txtNoMeja"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp">
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtMakanan"
+                    android:text="@string/Makanan"
+                    android:textSize="25dp"
+                    android:textColor="@color/DarkBlue"/>
+
+                <TextView
+                    android:id="@+id/txtHargaMkn"
+                    android:text="@string/harga"
+                    android:layout_marginLeft="23dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/DarkBlue"/>
+
+                <TextView
+                    android:id="@+id/txtJmlMkn"
+                    android:text="@string/Jumlah"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/DarkBlue"/>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cbSoto"
+                    android:text="@string/soto"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSoto"
+                    android:textSize="20dp"
+                    android:text="15000"
+                    android:textColor="@color/Maroon"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/editSoto"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cbNasgor"
+                    android:text="@string/nasgor"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtNasgor"
+                    android:textSize="20dp"
+                    android:text="10000"
+                    android:textColor="@color/Maroon"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/editNasgor"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cbPclAyam"
+                    android:text="@string/pclAyam"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtPclAyam"
+                    android:textSize="20dp"
+                    android:text="20000"
+                    android:textColor="@color/Maroon"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/editPclAyam"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cbPclLele"
+                    android:text="@string/pclLele"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtPclLele"
+                    android:textSize="20dp"
+                    android:text="20000"
+                    android:textColor="@color/Maroon"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/editPclLele"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cbMigor"
+                    android:text="@string/migor"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtMigor"
+                    android:textSize="20dp"
+                    android:text="8000"
+                    android:textColor="@color/Maroon"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/editMigor"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cbMirebus"
+                    android:text="@string/mibus"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtMirebus"
+                    android:textSize="20dp"
+                    android:text="8000"
+                    android:textColor="@color/Maroon"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/editMirebus"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tminuman"
+            android:layout_below="@id/tmakanan"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp">
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtMinuman"
+                    android:text="@string/Minuman"
+                    android:textSize="25dp"
+                    android:textColor="@color/DarkBlue"/>
+
+                <TextView
+                    android:id="@+id/txtHargaMnm"
+                    android:text="@string/harga"
+                    android:layout_marginLeft="23dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/DarkBlue"/>
+
+                <TextView
+                    android:id="@+id/txtJmlMnm"
+                    android:text="@string/Jumlah"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/DarkBlue"/>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cbAlpukat"
+                    android:text="@string/alpukat"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtAlpukat"
+                    android:textSize="20dp"
+                    android:text="12000"
+                    android:textColor="@color/Maroon"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/editAlpukat"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cbJeruk"
+                    android:text="@string/jeruk"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtJeruk"
+                    android:textSize="20dp"
+                    android:text="10000"
+                    android:textColor="@color/Maroon"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/editJeruk"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cbMangga"
+                    android:text="@string/mangga"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtMangga"
+                    android:textSize="20dp"
+                    android:text="10000"
+                    android:textColor="@color/Maroon"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/editMangga"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cbTomat"
+                    android:text="@string/tomat"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtTomat"
+                    android:textSize="20dp"
+                    android:text="8000"
+                    android:textColor="@color/Maroon"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/editTomat"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cbWortel"
+                    android:text="@string/wortel"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtWortel"
+                    android:textSize="20dp"
+                    android:text="8000"
+                    android:textColor="@color/Maroon"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/editWortel"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cbSirsak"
+                    android:text="@string/sirsak"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSirsak"
+                    android:textSize="20dp"
+                    android:text="9.000"
+                    android:textColor="@color/Maroon"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/editSirsak"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+        </TableLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtJmlOrang"
+            android:text="@string/jmlorang"
+            android:layout_below="@+id/tminuman"
+            android:textColor="@color/DarkBlue"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgOrang"
+            android:layout_below="@+id/txtJmlOrang">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb1"
+                android:textSize="20dp"
+                android:text="1 Orang"
+                android:layout_marginLeft="40dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb2"
+                android:textSize="20dp"
+                android:text="2 Orang"
+                android:layout_marginLeft="40dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb3"
+                android:textSize="20dp"
+                android:text="3 Orang"
+                android:layout_marginLeft="40dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb4"
+                android:textSize="20dp"
+                android:text="4 Orang"
+                android:layout_marginLeft="40dp"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtJenisBayar"
+            android:text="@string/jenisByr"
+            android:textSize="25dp"
+            android:layout_below="@+id/rgOrang"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/DarkBlue"/>
+
+        <Spinner
+            android:id="@+id/SpinnerByr"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/txtJenisBayar"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/txtJenisBayar"></Spinner>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/proses"
+            android:id="@+id/btnProses"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/SpinnerByr"
+            android:textColor="@color/Red"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:background="@color/DarkBlue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRinci"
+            android:text="@string/detail"
+            android:textColor="@color/DarkBlue"
+            android:layout_below="@+id/btnProses"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDetail"
+            android:textSize="25dp"
+            android:layout_below="@+id/txtRinci"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+</ScrollView>
